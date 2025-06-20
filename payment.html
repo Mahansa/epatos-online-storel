@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruksi Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-container">
+            <header class="payment-header">
+                <img id="payment-logo" src="" alt="Logo Metode Pembayaran">
+                <h1 id="payment-title">Memuat...</h1>
+            </header>
+
+            <div class="payment-details">
+                <div class="timer-section">
+                    <span>Selesaikan Pembayaran Dalam:</span>
+                    <div id="countdown-timer">29:59</div>
+                </div>
+                <p>Silakan lakukan transfer ke nomor/rekening berikut:</p>
+                <div class="payment-number-box">
+                    <span id="payment-number">...</span>
+                    <button id="copy-btn">Salin</button>
+                </div>
+                <p id="payment-instructions">Instruksi spesifik akan muncul di sini.</p>
+            </div>
+
+            <form id="confirmation-form" class="confirmation-form">
+                <h3>Konfirmasi Pembayaran</h3>
+                <p>Unggah bukti transfer Anda untuk menyelesaikan pesanan.</p>
+                <div class="form-group">
+                    <label for="screenshot-upload">Upload Screenshot</label>
+                    <input type="file" id="screenshot-upload" accept="image/*" required>
+                </div>
+                <button type="submit" class="submit-button">Kirim dan Selesaikan Pesanan</button>
+            </form>
+             <a href="index.html" class="back-link">&larr; Batalkan dan Kembali</a>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

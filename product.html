@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="detail-style.css"> <script src="product-detail.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Kembali ke produk</a>
+        <div id="product-detail-container" class="product-detail-layout">
+            <div class="product-image-section">
+                <img id="product-image" src="" alt="Gambar produk">
+            </div>
+
+            <div class="product-info-section">
+                <h1 id="product-name">Nama Produk Sedang Dimuat...</h1>
+                
+                <div class="meta-info">
+                    <span>Terjual <span id="product-sold">...</span>+</span>
+                    <span class="separator">|</span>
+                    <span>★ <span id="product-rating">...</span></span>
+                </div>
+
+                <p class="product-price-detail" id="product-price">Rp0</p>
+                <div id="product-discount-info"></div>
+
+                <div class="description">
+                    <h3>Deskripsi Produk</h3>
+                    <p id="product-description">...</p>
+                </div>
+
+                <div class="purchase-action">
+                    <div class="quantity-selector">
+                        <button id="minus-btn">-</button>
+                        <input type="number" id="quantity-input" value="1" min="1">
+                        <button id="plus-btn">+</button>
+                    </div>
+                    <button id="add-to-cart-btn" class="buy-button">Masukkan Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+    <div id="payment-method-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <button id="close-payment-method-btn" class="close-button">&times;</button>
+        <h2>Pilih Metode Pembayaran</h2>
+        <div class="payment-options-grid">
+            <div class="payment-option" data-method="gopay">
+                <img src="https://seeklogo.com/images/G/gopay-logo-9527C7620E-seeklogo.com.png" alt="GoPay">
+                <span>GoPay</span>
+            </div>
+            <div class="payment-option" data-method="dana">
+                <img src="https://seeklogo.com/images/D/dana-logo-C5152B824C-seeklogo.com.png" alt="DANA">
+                <span>DANA</span>
+            </div>
+            <div class="payment-option" data-method="ovo">
+                <img src="https://seeklogo.com/images/O/ovo-logo-135B026343-seeklogo.com.png" alt="OVO">
+                <span>OVO</span>
+            </div>
+            <div class="payment-option" data-method="bca">
+                <img src="https://seeklogo.com/images/B/bca-logo-592833912B-seeklogo.com.png" alt="BCA">
+                <span>BCA Virtual Account</span>
+            </div>
+            <div class="payment-option" data-method="bri">
+                <img src="https://seeklogo.com/images/B/bri-logo-35A1D46294-seeklogo.com.png" alt="BRI">
+                <span>BRI Virtual Account</span>
+            </div>
+            <div class="payment-option cod-soon" data-method="cod" disabled>
+                <img src="https://cdn-icons-png.flaticon.com/512/649/649451.png" alt="COD">
+                <span>Cash on Delivery (Segera Hadir)</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
