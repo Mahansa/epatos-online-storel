@@ -11,3 +11,5 @@ don't forget to create your new .nvm for transaction work!
 
 This is example website that contain the backed: https://6f3415a8-a894-49ff-9174-49eb70260194-00-xkci6kdm6gvn.sisko.replit.dev/
 and this is website just with a front-end but the backend is not running: https://mahansa.github.io/epatos-online-store/
+
+noted: the website that contain backend i deploy on replit and the server is not 24/7 open so if the link eror that's mean i am not open the server
