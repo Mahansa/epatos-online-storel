@@ -10,4 +10,4 @@ after that you open the index.html on live server. and done
 don't forget to create your new .nvm for transaction work!
 
 This is example website that contain the backed: https://6f3415a8-a894-49ff-9174-49eb70260194-00-xkci6kdm6gvn.sisko.replit.dev/
-and this is website just with a front-end but the backend is not running: 
+and this is website just with a front-end but the backend is not running: https://mahansa.github.io/epatos-online-store/
