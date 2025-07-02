@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const paymentData = {
         gopay: {
             name: 'GoPay',
-            logo: 'https://seeklogo.com/images/G/gopay-logo-9527C7620E-seeklogo.com.png',
+            logo: 'https://imgs.search.brave.com/8Teak2Spodtv-IJyv-RfePWGtWueEDeSKxInkuQlL74/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzM2LzEvZ29wYXkt/bG9nby1wbmdfc2Vl/a2xvZ28tMzY5ODEz/LnBuZw',
             number: '081234567890', // Nomor GoPay Tujuan
             instructions: 'Buka aplikasi Gojek, pilih menu Bayar, lalu scan QR atau transfer ke nomor di atas.'
         },
@@ -101,7 +101,7 @@ document.getElementById('confirmation-form').addEventListener('submit', async (e
 
     // Kirim data ke back-end
     try {
-        const response = await fetch('http://localhost:3000/send-order', {
+        const response = await fetch(window.location.origin + '/send-order', {
             method: 'POST',
             body: formData, // Tidak perlu header Content-Type, browser akan menanganinya
         });
