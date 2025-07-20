@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
   .animated {
     animation-duration: 4s; 
@@ -132,12 +133,94 @@
         </div>
     </div>
 </div>
+<div id=katagori>
+    <h1 >Katagori</h1>
+</div>
+<div id="pilihan">
+    <i class="fas fa-laptop"></i>
+    <i class="fas fa-mobile-alt"></i>
+    <i class="fas fa-motorcycle"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-search"></i>
+
+
+<!-- Tombol Buka Chat -->
+<div id="chat-toggle" onclick="toggleChat()">
+    💬
+</div>
+
+<!-- Box Chat -->
+<div id="livechat" style="display: none;">
+    <div id="chatlogs"></div>
+    <input type="text" id="msg" placeholder="Ketik pesan..." />
+    <button onclick="sendMsg()">Kirim</button>
+</div>
+
+
+<style>
+#chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #50a6fc;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+}
+
+#chat-toggle:hover {
+    background-color: #3277c8;
+}
+
+#livechat {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+#chatlogs {
+    height: 200px;
+    overflow-y: auto;
+    background: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+</style>
+
+
+
+</div>
 <script>
+    function toggleChat() {
+    const chatBox = document.getElementById("livechat");
+    if (chatBox.style.display === "none") {
+        chatBox.style.display = "block";
+        loadChat(); 
+    } else {
+        chatBox.style.display = "none";
+    }
+}
      $(document).ready(function() {
   $("#belanja").addClass("animated fadeIn");
   $("#temukan").addClass("animated fadeIn");
   $("#mulai").addClass("animated fadeIn");
-    $("#img").addClass("animated fadeIn");
+  $("#img").addClass("animated fadeIn");
   });
 </script>
 
